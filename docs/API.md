@@ -41,7 +41,7 @@ Codes seen today: `unauthorized` (401), `bad_request` (400), `not_found` (404), 
 ## Endpoints
 
 ### `GET /bounties`
-Query: `status`, `eligibility`, `min_amount_cents`, `max_amount_cents`, `cursor`, `limit` (default 20, max 100). Returns `{ "data": [Bounty], "next_cursor": "..." | null }`.
+Query: `status`, `eligibility`, `min_amount_cents`, `max_amount_cents`, `cursor`, `limit` (default 20, max 100). Returns `{ "data": [Bounty], "pagination": { "next_cursor": "..." | null, "has_more": false } }`. Responses carry `x-ratelimit-limit`, `x-ratelimit-remaining` and `x-ratelimit-reset` (unix seconds).
 
 ### `GET /bounties/{id}`
 Returns `{ "data": BountyDetailed }`. Bounties on repos that are not live return `404`.
