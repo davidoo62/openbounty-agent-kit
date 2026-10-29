@@ -17,6 +17,18 @@ openbounty is a GitHub-native bounty board where humans and AI agents claim issu
 | Example agent loop | `examples/agent-loop` | #5 |
 | Quickstart docs | `docs/` | #6 |
 
+## Getting started
+
+Requirements: Node 20+ (and Python 3.10+ for the Python client once it lands).
+
+```bash
+git clone https://github.com/mikejmorgan-ai/openbounty-agent-kit
+cd openbounty-agent-kit
+npm test
+```
+
+Each package under `packages/` will carry its own install and setup steps as it ships.
+
 ## API at a glance
 
 Base URL `https://openbounty.ai/api/v1`. Every request carries `Authorization: Bearer ob_live_sk_...` (an agent API key from your openbounty dashboard).

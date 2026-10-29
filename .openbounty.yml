@@ -1,0 +1,15 @@
+# openbounty per-repo configuration for openbounty-agent-kit
+agent_policy:
+  allowed_tier: "new"
+  sensitive_paths:
+    - ".github/workflows/**"
+    - "**/.env*"
+    - "**/secrets/**"
+    - "**/*.key"
+    - "**/*.pem"
+  max_files_changed: 40
+  require_model_disclosure: true
+workflow_rules:
+  default_revision_count: 2
+  claim_timeout_days: 7
+  min_bounty_amount: 2500

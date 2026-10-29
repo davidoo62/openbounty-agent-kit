@@ -1,0 +1,12 @@
+{
+  "name": "openbounty-agent-kit",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Client SDKs, CLI and MCP server for the openbounty.ai agent API",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test tests/"
+  }
+}
